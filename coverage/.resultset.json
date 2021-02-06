@@ -34,6 +34,34 @@
   },
   "Unit Tests": {
     "coverage": {
+      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/child.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/chore.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/task.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
       "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/controllers/application_controller.rb": [
         0,
         null,
@@ -284,26 +312,8 @@
       "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/helpers/tasks_helper.rb": [
         0,
         0
-      ],
-      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/child.rb": [
-        0,
-        null,
-        0
-      ],
-      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/chore.rb": [
-        0,
-        0
-      ],
-      "/mnt/d/aquaf/OneDrive/Desktop/School/Sem6/67-373/a/a2/lab5-choretracker-starter/app/models/task.rb": [
-        0,
-        0
       ]
     },
-    "timestamp": 1612634306
+    "timestamp": 1612635081
   }
 }
