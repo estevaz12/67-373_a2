@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-06T13:24:20-05:00">2021-02-06T13:24:20-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-02-06T13:43:37-05:00">2021-02-06T13:43:37-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">10.5%</span></span>
+    (<span class="covered_percent"><span class="red">15.63%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.12
+         0.2
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>12</b> files in total.
-    <b>181</b> relevant lines. 
-    <span class="green"><b>19</b> lines covered</span> and
+    <b>192</b> relevant lines. 
+    <span class="green"><b>30</b> lines covered</span> and
     <span class="red"><b>162</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -153,11 +153,11 @@
       <tr>
         <td class="strong"><a href="#c4432eba708abf23093d4e05d666fad2879081cb" class="src_link" title="app/models/chore.rb">app/models/chore.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>22</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -256,19 +256,19 @@
           <div class="file_list_container" id="Models">
   <h2>
     <span class="group_name">Models</span>
-    (<span class="covered_percent"><span class="green">95.0%</span></span>
+    (<span class="covered_percent"><span class="green">96.77%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.1
+         1.25
        </span>
     </span> hits/line)
   </h2>
   <a name="Models"></a>
   <div>
     <b>4</b> files in total.
-    <b>20</b> relevant lines. 
-    <span class="green"><b>19</b> lines covered</span> and
+    <b>31</b> relevant lines. 
+    <span class="green"><b>30</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -308,11 +308,11 @@
       <tr>
         <td class="strong"><a href="#c4432eba708abf23093d4e05d666fad2879081cb" class="src_link" title="app/models/chore.rb">app/models/chore.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>22</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -322,7 +322,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -2235,8 +2235,8 @@
     <h3>app/models/chore.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2269,6 +2269,108 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    validates_date :due_on</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    scope :by_task, -&gt; {joins(:task).order(&#39;name&#39;)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    scope :chronological, -&gt; {order(&#39;due_on, completed&#39;)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    scope :pending, -&gt; {where.not(completed: true)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    scope :done, -&gt; {where(completed: true)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    scope :upcoming, -&gt; {where(&#39;due_on &gt;= ?&#39;, Date.current)}</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    scope :past, -&gt; { where(&#39;due_on &lt; ?&#39;, Date.current) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def status</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        if completed</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">            &#39;Completed&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">        else </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">            &#39;Pending&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
@@ -2353,14 +2455,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="11">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
           <code class="ruby">    scope :alphabetical, -&gt; {order(&#39;name&#39;)}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
           <code class="ruby">    scope :active, -&gt; {where(active: true)}</code>
         </li>
