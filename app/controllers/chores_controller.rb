@@ -4,7 +4,7 @@ class ChoresController < ApplicationController
   # GET /chores
   # GET /chores.json
   def index
-    @chores = Chore.all
+    @chores = Chore.chronological.by_task.all
   end
 
   # GET /chores/1

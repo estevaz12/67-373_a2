@@ -11,7 +11,7 @@
 <% @children.each do |child| %>
   <tr>
     <td><%= link_to child.name, child_path(child) %></td>
-    <td align="center"><%= child.active %></td>
+    <td align="center"><%= child.active ? "Yes" : "No" %></td>
     <td align="center"><%= child.points_earned %></td>
     <td><%= link_to 'Edit', edit_child_path(child) %></td>
   </tr>

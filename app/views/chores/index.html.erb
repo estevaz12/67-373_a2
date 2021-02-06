@@ -11,10 +11,10 @@
 
 <% @chores.each do |chore| %>
   <tr>
-    <td><%= chore.child_id %></td>
-    <td><%= chore.task_id %></td>
-    <td align="center"><%= chore.due_on %></td>
-    <td align="center"><%= chore.completed %></td>
+    <td><%= chore.child.name %></td>
+    <td><%= chore.task.name %></td>
+    <td align="center"><%= chore.due_on.strftime('%b %d') %></td>
+    <td align="center"><%= chore.status %></td>
     <td><%= link_to 'Edit', edit_chore_path(chore) %></td>
   </tr>
 <% end %>
